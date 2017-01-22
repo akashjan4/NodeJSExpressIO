@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <% include partials/template/head.ejs %>
+  </head>
+  <body id="<%= id %>">
+ <% include partials/template/header.ejs %>
+ <div class="speakerlist">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="maincontent">
+          <article class="article">
+
+            <ul class="list-group">
+            <% for(var i=0;i<item.length;i++){%>
+         <li class="list-group-item" style="    padding: 0;
+    margin: 0;">
+         <h3><%= item[i].name %></h3>
+     <img class="pull-left img-circle" src="/images/speakers/<%= item[i].shortname %>_tn.jpg"
+     alt="speaker">
+         <p class="lead"><%= item[i].summary %></p>
+         </li>
+            <% }%>
+         </ul>
+          </article>
+            
+          </div><!--maincontent-->
+           
+       </div><!--col-sm-8-->
+       <% include partials/content/sideContent.ejs%>
+     </div><!--row->
+</div><!--container->
+
+   <% include partials/content/jsContent.ejs%>
+ </body>
+ </html>
+
+ 
