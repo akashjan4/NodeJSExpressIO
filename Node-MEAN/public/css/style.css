@@ -1,0 +1,36 @@
+
+.prod-parent
+{
+width:200px;
+border:1px solid #fff;
+margin:0 0 0.2em 1em ;
+}
+.prod-info
+{
+    width:100%;
+    font-size:1.2em;
+    font-weight:900;
+    background-color:#5E8BDC;
+    color:#fff;
+}
+
+.prod-name
+{
+    width:75%;
+    font-size:1.2em;
+    font-weight:300;
+    background-color:#5E8BDC;
+    color:#fff;
+    display:inline-block;
+}
+.prod-price
+{
+    width:25%;
+     font-size:1.2em;
+    font-weight:300;
+    background-color:#6EB9FF;
+     color:#fff;
+    display:inline-block;
+
+
+}
